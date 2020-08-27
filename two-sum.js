@@ -37,7 +37,7 @@ const twoSum3 = (nums, target) => {
     for(let i=0; i<nums.length; i++){
         const current= nums[i];
         if(hashMap.has(current)) return [hashMap.get(current), i];
-        const diff = target - nums[i];
+        const diff = target - current;
         hashMap.set(diff,i); 
     }
 }
