@@ -20,7 +20,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/two-sum.js"
+            "program": "${workspaceFolder}/two-sum-sorted.js"
         }
     ]
 }
