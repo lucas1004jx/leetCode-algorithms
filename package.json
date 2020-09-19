@@ -4,7 +4,7 @@
   "description": "",
   "main": "reverse-integer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node merge-2-sorted-lists.js"
   },
   "repository": {
     "type": "git",

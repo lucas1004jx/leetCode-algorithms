@@ -5,12 +5,10 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Attach by Process ID",
-			"processId": "${command:PickProcess}",
-			"request": "attach",
-			"skipFiles": ["<node_internals>/**"],
-			"type": "pwa-node",
-			"runtimeExecutable": "/Users/lucas1004jx/.nvm/versions/node/v12.4.0/bin/node"
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Program",
+			"program": "${workspaceFolder}/merge-2-sorted-lists.js"
 		},
 		{
 			"type": "node",
