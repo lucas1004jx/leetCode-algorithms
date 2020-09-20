@@ -54,8 +54,8 @@ const nums = [3, 2, 2, 3];
 const val = 3;
 
 // i=0, j = 0 
-// i = 0, j=1; => 2 2 2 3
-// i =1, j=2 => 2 2 2 3
+// i = 0, j=1; => 2 3 2 3
+// i =1, j=2 => 2 2 3 3
 // i = 2, j =2 
 
 const result = removeElement(nums, val);
