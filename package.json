@@ -1,28 +1,28 @@
 {
-  "name": "leetCode-algorithms",
-  "version": "1.0.0",
-  "description": "",
-  "main": "reverse-integer.js",
-  "scripts": {
-    "start": "node merge-2-sorted-lists.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lucas1004jx/leetCode-algorithms.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lucas1004jx/leetCode-algorithms/issues"
-  },
-  "homepage": "https://github.com/lucas1004jx/leetCode-algorithms#readme",
-  "devDependencies": {
-    "eslint": "^7.8.1",
-    "eslint-config-node": "^4.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.1"
-  }
+	"name": "leetCode-algorithms",
+	"version": "1.0.0",
+	"description": "",
+	"main": "reverse-integer.js",
+	"scripts": {
+		"start": "node implement-strStr.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lucas1004jx/leetCode-algorithms.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/lucas1004jx/leetCode-algorithms/issues"
+	},
+	"homepage": "https://github.com/lucas1004jx/leetCode-algorithms#readme",
+	"devDependencies": {
+		"eslint": "^7.8.1",
+		"eslint-config-node": "^4.1.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"prettier": "^2.1.1"
+	}
 }
