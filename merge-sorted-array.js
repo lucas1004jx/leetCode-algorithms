@@ -14,14 +14,14 @@ nums2 = [2,5,6],       n = 3
 Output: [1,2,2,3,5,6]
  */
 
-const merge = (nums1, m, nums2, n) => {
+const merge_1 = (nums1, m, nums2, n) => {
     let p1 = m - 1;
     let p2 = n - 1;
 
     for (let i = nums1.length - 1; i >= 0; i--) {
         if (n === 0 || p2 < 0) break;
 
-        if (m > 0 && nums1[p1] >= nums2[p2]) {
+        if (m > 0 && p1 > 0 && nums1[p1] >= nums2[p2]) {
             nums1[i] = nums1[p1--];
         } else {
             nums1[i] = nums2[p2--];
@@ -30,11 +30,28 @@ const merge = (nums1, m, nums2, n) => {
     }
 
 };
-const nums1 = [0];
-const m = 0;
-const nums2 = [1];
-const n = 1;
 
-merge(nums1, m, nums2, n);
+const merge = (nums1, m, nums2, n) => {
+    if (n === 0) return;
+    const sort = (p1, p2, index) => {
+        if (p2 < 0) return;
+        if (p1 >= 0 && nums1[p1] >= nums2[p2]) {
+            nums1[index--] = nums1[p1--];
+            sort(p1, p2, index);
+        } else {
+            nums1[index--] = nums2[p2--];
+            sort(p1, p2, index);
+        }
+    }
+
+    sort(m - 1, n - 1, nums1.length - 1);
+}
+
+const nums1 = [4, 5, 6, 0, 0, 0];
+const m = 3;
+const nums2 = [1, 2, 3];
+const n = 3;
+
+merge_1(nums1, m, nums2, n);
 
 console.log('nums1-->', nums1);
