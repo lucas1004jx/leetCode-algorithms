@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "reverse-integer.js",
 	"scripts": {
-		"start": "node implement-strStr.js"
+		"start": "node merge-sorted-array.js"
 	},
 	"repository": {
 		"type": "git",
