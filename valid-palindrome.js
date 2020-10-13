@@ -15,7 +15,7 @@ Output: false
  */
 
 
-const isPalindrome = (s) => {
+const isPalindrome_1 = (s) => {
 
     const string = s.toLowerCase().replace(/[^a-z0-9]/g, '');
     if (string.length === 0) return true;
@@ -29,6 +29,16 @@ const isPalindrome = (s) => {
     if (string === reversedString) return true;
     return false;
 };
+
+const isPalindrome = (s) => {
+
+    const string = s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (string.length === 0) return true;
+    for (let i = 0; i < string.length / 2; i++) {
+        if (string[i] !== string[string.length - 1 - i]) return false;
+    }
+    return true;
+}
 
 const s = "Damosel, a poem? A carol? Or a cameo pale? (So mad!)";
 const result = isPalindrome(s);
