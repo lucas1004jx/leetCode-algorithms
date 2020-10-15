@@ -45,6 +45,18 @@ const moveZeroes_1 = (nums) => {
 
     return nums;
 }
-const nums = [1, 0, 1];
-const result = moveZeroes_1(nums);
+
+const moveZeroes_2 = (nums) => {
+    for (let i = nums.length - 1; i >= 0; i--) {
+        if (nums[i] === 0) {
+            nums.splice(i, 1);
+            nums.push(0);
+        }
+    }
+
+    return nums;
+}
+
+const nums = [0, 0, 1];
+const result = moveZeroes_2(nums);
 console.log('result---->', result);
